@@ -57,7 +57,7 @@ namespace PSOFunctionApproximation
                 {
                     randomValues[j] = RND.Next(-10, 11);
                 }
-                result.Add(new PSOItem() { Position = randomValues, LocalOptimum = randomValues, Velocity = randomValues });
+                result.Add(new PSOItem() { Position = (double[])randomValues.Clone(), LocalOptimum = (double[])randomValues.Clone(), Velocity = (double[])randomValues.Clone() });
             }
             return result;
         }
@@ -69,7 +69,7 @@ namespace PSOFunctionApproximation
                 double actFitness = problem.Objective(item.Position);
                 if (actFitness <= problem.Objective(item.LocalOptimum))
                 {
-                    item.LocalOptimum = item.Position;
+                    item.LocalOptimum = (double[])item.Position.Clone();
                     if(actFitness < problem.Objective(globalOptimum))
                     {
                         globalOptimum = (double[])item.Position.Clone();
