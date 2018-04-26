@@ -11,14 +11,23 @@ namespace KMeanImageSegmentation
     {
         private Bitmap raw_color;
         private Bitmap raw_grayscale;
+        private Bitmap result;
 
-        public Bitmap GrayScale { get; }
+        public Bitmap GrayScale
+        {
+            get { return raw_grayscale; }
+        }
+
+        public Bitmap Result
+        {
+            get { return result; }
+        }
 
         public void ReadFromFile(string path)
         {
             raw_color = (Bitmap)Image.FromFile(path);
             CreateGrayScale();
-            //raw_grayscale.Save("result.bmp");
+            result = new Bitmap(raw_color.Width, raw_color.Height);
         }
 
         private void CreateGrayScale()

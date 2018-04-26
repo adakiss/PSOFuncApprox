@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A99D89CD-5079-4EA8-BB60-199567F4465E}</ProjectGuid>
+    <ProjectGuid>{1780B75C-D189-4FA4-AEA3-C9534E4C02B0}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>KMeanImageSegmentation</RootNamespace>
-    <AssemblyName>KMeanImageSegmentation</AssemblyName>
+    <RootNamespace>GATravelingSalesman</RootNamespace>
+    <AssemblyName>GATravelingSalesman</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,7 +34,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,22 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cluster.cs" />
-    <Compile Include="ImageSegmentationProblem.cs" />
-    <Compile Include="ImageSegmentationSolver.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Solution.cs" />
+    <Compile Include="Town.cs" />
+    <Compile Include="TravelingSalesmanProblem.cs" />
+    <Compile Include="TravelingSalesmanSolver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="dcafd26bbd37e83aab4b75fff8ca36ff.jpg.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="slide_sample.bmp">
+    <EmbeddedResource Include="Towns.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>

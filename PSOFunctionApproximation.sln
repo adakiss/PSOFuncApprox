@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSOFunctionApproximation", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMeansImageSegmentation", "KMeanImageSegmentation\KMeansImageSegmentation.csproj", "{A99D89CD-5079-4EA8-BB60-199567F4465E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GATravelingSalesman", "GATravelingSalesman\GATravelingSalesman.csproj", "{1780B75C-D189-4FA4-AEA3-C9534E4C02B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A99D89CD-5079-4EA8-BB60-199567F4465E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A99D89CD-5079-4EA8-BB60-199567F4465E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A99D89CD-5079-4EA8-BB60-199567F4465E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1780B75C-D189-4FA4-AEA3-C9534E4C02B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1780B75C-D189-4FA4-AEA3-C9534E4C02B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1780B75C-D189-4FA4-AEA3-C9534E4C02B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1780B75C-D189-4FA4-AEA3-C9534E4C02B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

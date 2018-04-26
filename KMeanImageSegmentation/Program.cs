@@ -10,8 +10,8 @@ namespace KMeanImageSegmentation
     {
         static void Main(string[] args)
         {
-            ImageSegmentationProblem problem = new ImageSegmentationProblem();
-            problem.ReadFromFile("slide_sample.bmp");
+            ImageSegmentationSolver solver = new ImageSegmentationSolver("slide_sample.bmp");
+            solver.SegmentImage();
         }
     }
 }
